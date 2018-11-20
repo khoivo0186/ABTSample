@@ -16,6 +16,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.Driver;
 import utilities.TestRunner;
 
+/**
+ * Initialize WebElement and actions to interact with element.
+ * @author khoivo
+ *
+ */
 public class Element implements WebElement {
 
 	private final WebElement element;
@@ -174,7 +179,11 @@ public class Element implements WebElement {
 		Assertion.checkEquals(element.isDisplayed(), true, "check if element (" + this.by.toString() + ") exists.");
 	}
 	
-	
+	/**
+	 * Check specific attribute with specific value
+	 * @param attribute attribute name, such as: class, data,...
+	 * @param expected expected value of attribute
+	 */
 	public void checkAttribute(String attribute, String expected) {
 		String attValue = element.getAttribute(attribute);
 		

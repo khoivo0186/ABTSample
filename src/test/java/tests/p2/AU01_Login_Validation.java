@@ -19,7 +19,7 @@ public class AU01_Login_Validation extends TestBase {
 
 	@BeforeMethod
 	public void beforeTest() {
-	
+		// actions need to be run at beginning of every test cases
 	}
 
 	/******************************************************
